@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- cdn Font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- link Google Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;1,700&display=swap" rel="stylesheet">    
+    <!-- link CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- cdn Vue js -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <title>To Do List</title>
+</head>
+<body>
+
+    <!-- start Vue -->
+    <div id="app" class="container">
+        <!-- start header -->
+        <header>
+            <img :src="logoImg" alt="logo todolist">
+        </header>
+        <!-- end header -->
+
+        <!-- start add-todo -->
+        <div class="add-todo">
+            <input type="text" placeholder="Aggiungi un promemoria">
+            <button>Aggiungi</button>
+        </div>
+        <!-- end add-todo -->
+
+        <!-- start todo-container -->
+        <div class="todo-container">
+            <ul>
+                <li class="clearfix">
+                    Cosa da fare
+                    <i class="fas fa-times f-right"></i>
+                </li>
+            </ul>
+        </div>
+        <!-- end todo-container -->
+
+    </div>
+    <!-- end Vue -->
+
+
+    <!-- collegamento js -->
+    <script src="js/script.js"></script>
+    
+</body>
+</html>
