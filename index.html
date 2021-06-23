@@ -28,19 +28,20 @@
 
         <!-- start add-todo -->
         <div class="add-todo">
-            <input type="text" placeholder="Aggiungi un promemoria">
-            <button>Aggiungi</button>
+            <input type="text" placeholder="Aggiungi un promemoria" v-model="addToDo">
+            <button @click='newToDo'>Aggiungi</button>
         </div>
         <!-- end add-todo -->
 
         <!-- start todo-container -->
         <div class="todo-container">
-            <ul>
-                <li class="clearfix">
-                    Cosa da fare
-                    <i class="fas fa-times f-right"></i>
+            <ul v-if="toDo.length > 0">
+                <li class="clearfix" v-for='item in toDo'>
+                    {{item}}
+                    <i class="fas fa-times f-right" @click='removeToDo'></i>
                 </li>
             </ul>
+            <h3 v-else>Hai finito le cose da fare, goditi un po' di relax</h3>
         </div>
         <!-- end todo-container -->
 
