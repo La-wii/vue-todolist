@@ -12,11 +12,16 @@ const app = new Vue({
     },
     methods: {
         newToDo(){
-            this.toDo.push(this.addToDo);
-            this.addToDo = '';
-        },
+            if(this.addToDo == ''){
+               alert('Non puoi inserire un promemoria vuoto!')
+            } else{
+                this.toDo.push(this.addToDo);
+                this.addToDo = '';
+            }  
+        },   
         removeToDo(index){
             this.toDo.splice(index,1);
         }
     }
 })
+
