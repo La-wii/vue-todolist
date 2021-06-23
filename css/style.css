@@ -24,7 +24,18 @@ header,.add-todo{
     cursor: pointer;   
 }
 
-.todo-container{
+.add-todo button{
+    background-color: rgb(242, 41, 68); 
+    font-size: 15px;
+    border: none;
+    margin-left: 10px;
+}
+.add-todo button:hover{
+    color: white;
+    background-color: rgb(236, 86, 26);
+}
+
+.todo-container{    
     padding: 20px;
 }
 
@@ -33,26 +44,34 @@ header,.add-todo{
     font-size: 22px;
 }
 
-.todo-container ul li{
-    background-color: #84ffe6;
-    padding: 15px 20px;
-    border-radius: 30px;
-    border: 2px solid white;
-    margin-bottom: 2px;
-}
-
-.todo-container ul li:hover{
-    border: 2px solid #4d7c71;
-}
-
 .clearfix::after{
     content: '';
     display: table;
     clear: both;
 }
 
+.todo-container ul li{
+    background-color: #47f8d5;
+    border: 3px solid #3f5a54;
+    padding: 15px 20px;
+    border-radius: 30px;
+    margin-bottom: 2px;
+}
+
+.todo-container ul li:hover{
+    border: 3px solid #d681cf;
+    background-color: #65035d;
+    color: white;
+}
+
 .f-right{
     float: right;
+}
+
+h3{
+    text-align: center;
+    font-size: 50px;
+    font-weight: 600;
 }
 
 
