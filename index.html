@@ -28,7 +28,7 @@
 
         <!-- start add-todo -->
         <div class="add-todo">
-            <input type="text" placeholder="Aggiungi un promemoria" v-model="addToDo">
+            <input type="text" placeholder="Aggiungi un promemoria" v-model="addToDo" @keyup.enter="newToDo">
             <button @click='newToDo'>Aggiungi</button>
         </div>
         <!-- end add-todo -->
